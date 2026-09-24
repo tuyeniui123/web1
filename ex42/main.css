@@ -1,0 +1,87 @@
+/* Thiết lập định dạng chung cho toàn trang */
+BODY {
+    color: green;
+    background: white url('Draft.jpg') no-repeat fixed center center;
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px 40px;
+}
+.header-logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.nav-bar{
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* Định dạng các tiêu đề từ H1 đến H6 */
+H1, H2, H3, H4, H5, H6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(153, 102, 6);
+}
+
+/* Định dạng khối địa chỉ/thông tin liên hệ ở chân trang */
+ADDRESS {
+    font-size: 0.9em;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Khối trích dẫn ý kiến khách hàng */
+BLOCKQUOTE {
+    background-color: silver;
+    padding: 8px 15px;
+    margin: 10px 0;
+}
+
+/* Danh sách sản phẩm với icon tùy chỉnh */
+UL {
+    list-style: circle url('Apple.jpg') outside;
+    line-height: 1.5;
+}
+
+/* Tên sản phẩm (chữ in đậm trong danh sách) */
+UL B {
+    color: rgb(155, 0, 0);
+}
+
+/* Định dạng liên kết menu */
+A {
+    font-size: 0.9em;
+    color: green; /* Sửa lỗi cú pháp từ 'color-green' thành 'color: green' */
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+/* Hiệu ứng khi rê chuột qua liên kết */
+A:hover {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Lớp nhấn mạnh cho các cụm từ đặc biệt */
+.Special {
+    color: rgb(153, 102, 6);
+    font-weight: bold;
+}
+
+/* Khối bài viết nổi bật bên phải (Run the Messier Marathon) */
+DIV.Article {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(153, 102, 6);
+    background-color: rgb(252, 221, 163);
+    width: 250px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Định dạng ảnh minh họa bên trong khối Article */
+DIV.Article IMG {
+    display: block;
+    margin: 8px auto;
+    max-width: 100%;
+}
