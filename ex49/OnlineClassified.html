@@ -1,0 +1,295 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Classifieds Search Form</title>
+
+    <style>
+
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: white;
+        }
+
+        .container {
+            width: 820px;
+            margin: 30px auto;
+            padding: 25px 12px 40px 12px;
+
+            background-color: #ccffff;
+
+            border: 2px solid blue;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: red;
+            font-size: 32px;
+            margin: 0 0 28px 0;
+            border-bottom: 2px solid gray;
+            padding-bottom: 28px;
+        }
+
+        .question {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .radio-area {
+            display: grid;
+            grid-template-columns: 140px 180px;
+            row-gap: 5px;
+            margin-left: 10px;
+        }
+
+        .checkbox-area {
+            display: grid;
+            grid-template-columns: 240px 180px 230px;
+            row-gap: 8px;
+            margin-left: 10px;
+        }
+
+        .date-area {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .date-area input {
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            margin: 0 5px;
+            box-sizing: border-box;
+        }
+
+        .keyword {
+            width: 100%;
+            height: 32px;
+            margin-top: 15px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 55px;
+            margin-top: 25px;
+            margin-left: 5px;
+        }
+
+        .buttons img {
+            cursor: pointer;
+        }
+
+    </style>
+
+    <script>
+
+        // Nút Search
+        function searchForm() {
+            alert("Search");
+        }
+
+        // Nút Help
+        function helpForm() {
+            window.open(
+                "help.html",
+                "_blank"
+            );
+        }
+
+        // Nút Cancel
+        function cancelForm() {
+            document.getElementById("searchForm").reset();
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <form id="searchForm">
+
+        <!-- TIÊU ĐỀ -->
+
+        <h1>
+            Online Classifieds Search Form
+        </h1>
+
+        <!-- CÂU 1 -->
+
+        <div class="question">
+            1) Search for a classified in the following sections:
+        </div>
+
+        <div class="radio-area">
+
+            <label>
+                <input type="radio"
+                       name="section"
+                       value="Employment">
+                Employment
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="section"
+                       value="Personal">
+                Personal
+            </label>
+
+
+            <label>
+                <input type="radio"
+                       name="section"
+                       value="For Sale"
+                       checked>
+                For Sale
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="section"
+                       value="Miscellaneous">
+                Miscellaneous
+            </label>
+
+
+            <label>
+                <input type="radio"
+                       name="section"
+                       value="Housing">
+                Housing
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="section"
+                       value="All">
+                All of the above
+            </label>
+
+        </div>
+
+
+        <!-- CÂU 2 -->
+
+        <div class="question">
+            2) Search the following publications:
+        </div>
+
+        <div class="checkbox-area">
+
+            <label>
+                <input type="checkbox"
+                       name="publication"
+                       value="Midwest times"
+                       checked>
+                Midwest times
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       name="publication"
+                       value="Modern News">
+                Modern News
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       name="publication"
+                       value="Employment Today">
+                Employment Today
+            </label>
+
+
+            <label>
+                <input type="checkbox"
+                       name="publication"
+                       value="Great Lakes Classifieds"
+                       checked>
+                Great Lakes Classifieds
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       name="publication"
+                       value="Middleton Daily">
+                Middleton Daily
+            </label>
+
+            <label>
+                <input type="checkbox"
+                       name="publication"
+                       value="Cashtown Daily News">
+                Cashtown Daily News
+            </label>
+
+        </div>
+
+
+        <!-- CÂU 3 -->
+
+        <div class="question">
+            3)
+            <span class="date-area">
+
+                From
+
+                <input type="text"
+                       name="fromDate"
+                       placeholder="mm/dd/yy">
+
+                to
+
+                <input type="text"
+                       name="toDate"
+                       placeholder="mm/dd/yy">
+
+            </span>
+        </div>
+
+
+        <!-- CÂU 4 -->
+
+        <div class="question">
+            4) Enter a few keywords to describe the classified.
+        </div>
+
+        <input type="text"
+               name="keywords"
+               class="keyword">
+
+
+        <!-- CÂU 5 -->
+
+        <div class="question">
+            5) Click one of the options below:
+        </div>
+
+
+        <div class="buttons">
+
+            <!-- SEARCH -->
+
+            <img src="images/Search.gif"
+                 alt="Search"
+                 onclick="searchForm()">
+            <!-- HELP -->
+            <img src="images/Help.gif"
+                 alt="Help"
+                 onclick="helpForm()">
+            <!-- CANCEL -->
+            <img src="images/Cancel.gif"
+                 alt="Cancel"
+                 onclick="cancelForm()">
+        </div>
+    </form>
+</div>
+</body>
+</html>
