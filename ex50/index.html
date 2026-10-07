@@ -1,0 +1,190 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel Expense Report</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/DeLong.jpg" alt="DeLong Enterprises">
+            </div>
+            <!-- Title -->
+            <h1>Travel Expense Report</h1>
+            <hr>
+            <form onsubmit="submitForm(event)">
+                <!-- 1. First Name / Last Name -->
+                <div class="form-row">
+                    <label>1) First Name:</label>
+                    <input type="text" name="firstName">
+                    <label>Last Name:</label>
+                    <input type="text" name="lastName">
+                </div>
+                <!-- 2. Social Security Number -->
+                <div class="form-row">
+                    <label>2) Social Security Number:</label>
+                    <input type="text" name="social">
+                </div>
+
+                <!-- 3. Department -->
+                <div class="form-row">
+                    <label>3) Department:</label>
+                    <select name="department">
+                        <option>Accounting</option>
+                        <option>Marketing</option>
+                        <option>Human Resources</option>
+                        <option>IT</option>
+                        <option>Sales</option>
+                    </select>
+                </div>
+                <!-- 4. Purpose of trip -->
+                <div class="purpose">
+                    <p>
+                        4) Describe the purpose of your trip.
+                    </p>
+                    <textarea name="purpose"></textarea>
+                </div>
+                <!-- 5. Travel expenses -->
+                <div class="expenses">
+                    <p>
+                        5) Itemize your travel expenses
+                    </p>
+                    <table>
+                        <!-- Table header -->
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                        <!-- Row 1 -->
+                        <tr>
+                            <td>
+                                <input type="date" name="date1">
+                            </td>
+                            <td>
+                                <input type="text" name="description1">
+                            </td>
+                            <td>
+                                <select name="category1">
+                                    <option>Meal</option>
+                                    <option>Hotel</option>
+                                    <option>Transportation</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" name="amount1">
+                            </td>
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr>
+                            <td>
+                                <input type="date" name="date2">
+                            </td>
+                            <td>
+                                <input type="text" name="description2">
+                            </td>
+                            <td>
+                                <select name="category2">
+                                    <option>Meal</option>
+                                    <option>Hotel</option>
+                                    <option>Transportation</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" name="amount2">
+                            </td>
+                        </tr>
+                        <!-- Row 3 -->
+                        <tr>
+                            <td>
+                                <input type="date" name="date3">
+                            </td>
+                            <td>
+                                <input type="text" name="description3">
+                            </td>
+                            <td>
+                                <select name="category3">
+                                    <option>Meal</option>
+                                    <option>Hotel</option>
+                                    <option>Transportation</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" name="amount3">
+                            </td>
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr>
+                            <td>
+                                <input type="date" name="date4">
+                            </td>
+                            <td>
+                                <input type="text" name="description4">
+                            </td>
+                            <td>
+                                <select name="category4">
+                                    <option>Meal</option>
+                                    <option>Hotel</option>
+                                    <option>Transportation</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" name="amount4">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 6. Receipts -->
+                <div class="receipts">
+                    <p>
+                        6) Have you submitted your receipts?
+                        <label>
+                            <input
+                                type="radio"
+                                name="receipt"
+                                value="yes">
+                            Yes
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="receipt"
+                                value="no">
+                            No
+                        </label>
+                    </p>
+                </div>
+                <!-- Buttons -->
+                <div class="buttons">
+                    <button type="submit">
+                        Submit travel expenses
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+            <!-- Contact -->
+            <p class="contact">
+                Questions? Contact Debbie Larson in Accounting (ext. 2150).
+            </p>
+        </div>
+
+        <!-- Submit message -->
+        <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert("Your travel expenses have been submitted!");
+        }
+        </script>
+    </body>
+</html>

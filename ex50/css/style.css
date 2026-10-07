@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+#container {
+    width: 980px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ccffff;
+    border-left: 4px solid blue;
+    border-right: 4px solid #999;
+    min-height: 850px;
+}
+
+/* Logo */
+
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 600px;
+    height: auto;
+}
+
+
+/* Title */
+h1 {
+    font-size: 28px;
+    margin: 15px 0 25px;
+}
+hr {
+    border: none;
+    border-top: 2px solid #888;
+    margin-bottom: 20px;
+}
+
+
+/* Form */
+.form-row {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+.form-row label {
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    height: 28px;
+    border: 1px solid #999;
+    padding: 3px;
+}
+
+.form-row input[name="firstName"] {
+    width: 160px;
+    margin-right: 5px;
+}
+
+.form-row input[name="lastName"] {
+    width: 160px;
+}
+
+.form-row input[name="social"] {
+    width: 100px;
+}
+
+select {
+    height: 28px;
+    font-size: 16px;
+}
+
+
+/* Purpose */
+
+.purpose p {
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 600px;
+    height: 100px;
+
+    resize: none;
+
+    border: 1px solid #999;
+}
+
+
+/* Expenses */
+
+.expenses {
+    margin-top: 25px;
+}
+
+.expenses p {
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 760px;
+    background-color: #ccffff;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 3px;
+}
+
+th {
+    text-align: center;
+    font-size: 18px;
+}
+
+td {
+    height: 35px;
+}
+
+
+/* Table columns */
+
+th:nth-child(1) {
+    width: 120px;
+}
+
+th:nth-child(2) {
+    width: 390px;
+}
+
+th:nth-child(3) {
+    width: 160px;
+}
+
+th:nth-child(4) {
+    width: 100px;
+}
+
+
+/* Inputs inside table */
+
+table input[type="date"] {
+    width: 105px;
+    height: 28px;
+}
+
+table input[type="text"] {
+    width: 230px;
+    height: 28px;
+}
+
+table input[type="number"] {
+    width: 60px;
+    height: 28px;
+}
+
+table select {
+    width: 140px;
+}
+
+
+/* Receipts */
+
+.receipts {
+    margin-top: 18px;
+}
+
+.receipts label {
+    margin-left: 5px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+
+    padding: 4px 10px;
+
+    margin-right: 3px;
+}
+
+
+/* Contact */
+
+.contact {
+    margin-top: 25px;
+}
